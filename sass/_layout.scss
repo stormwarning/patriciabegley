@@ -1,0 +1,161 @@
+/*------------------------------------*\
+    $MAIN-LAYOUT
+\*------------------------------------*/
+/**
+ * Cutom layout bits
+ */
+body {
+  background-color: $darkgrey;
+}
+
+.site-header {
+  margin: 60px 0 0;
+  position: fixed;
+  width: 100%;
+}
+
+.logo--header {
+  background: $mediumgrey;
+  height: 115px;
+  padding: 5px 0 0 0;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.nav__site {
+  background: $mediumgrey;
+  height: 115px;
+  padding: 45px 30px;
+  text-align: center;
+}
+.nav__site li {
+  margin: 0 $base-spacing-unit * 2 0 0;
+}
+.nav__site li:last-child {
+  margin: 0;
+}
+.nav__item {
+  color: #fff;
+  @extend .delta;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.site-wrap {
+  background: #fff;
+  border: 20px solid $lightgrey;
+  margin: 30px;
+  padding: 200px 20px 20px;
+}
+
+
+.item__description {
+  padding-left: 25px;
+}
+
+
+
+/*------------------------------------*\
+    $ANIMATION
+\*------------------------------------*/
+/**
+ * Fade in the content
+ */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-khtml-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.portfolio__item {
+  -moz-animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  -khtml-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+[role="homepage"] .portfolio__item {
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -khtml-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -moz-animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
+  -o-animation-delay: 0.25s;
+  -ms-animation-delay: 0.25s;
+  -khtml-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+  -moz-animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  -ms-animation-timing-function: ease-in;
+  -khtml-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -khtml-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
