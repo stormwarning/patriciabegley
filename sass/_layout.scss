@@ -51,6 +51,9 @@ body {
   padding: 200px 20px 20px;
 }
 
+.portfolio__item {
+  margin-bottom: $base-spacing-unit * 3;
+}
 
 .item__description {
   padding-left: 25px;
@@ -58,104 +61,3 @@ body {
 
 
 
-/*------------------------------------*\
-    $ANIMATION
-\*------------------------------------*/
-/**
- * Fade in the content
- */
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-khtml-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.portfolio__item {
-  -moz-animation-name: fadeIn;
-  -webkit-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  -ms-animation-name: fadeIn;
-  -khtml-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
-[role="homepage"] .portfolio__item {
-  -moz-animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  -o-animation-duration: 0.5s;
-  -ms-animation-duration: 0.5s;
-  -khtml-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -moz-animation-delay: 0.25s;
-  -webkit-animation-delay: 0.25s;
-  -o-animation-delay: 0.25s;
-  -ms-animation-delay: 0.25s;
-  -khtml-animation-delay: 0.25s;
-  animation-delay: 0.25s;
-  -moz-animation-timing-function: ease-in;
-  -webkit-animation-timing-function: ease-in;
-  -o-animation-timing-function: ease-in;
-  -ms-animation-timing-function: ease-in;
-  -khtml-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -moz-animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -khtml-animation-fill-mode: both;
-  animation-fill-mode: both;
-}

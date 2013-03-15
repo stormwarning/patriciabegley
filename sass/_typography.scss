@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    $MAIN-LAYOUT
+\*------------------------------------*/
+/**
+ * Trusty font-face mixin
+ */
+@mixin font-specimen($font-name, $font-style, $font-weight) {
+  @font-face {
+    font-family: '#{$font-name}';
+    src: url('../font/#{$font-name}--#{$font-style}-#{$font-weight}.eot');
+    src: url('../font/#{$font-name}--#{$font-style}-#{$font-weight}.eot?#iefix') format('embedded-opentype'),
+         url('../font/#{$font-name}--#{$font-style}-#{$font-weight}.woff') format('woff'),
+         url('../font/#{$font-name}--#{$font-style}-#{$font-weight}.svg##{$font-name}--#{$font-style}-#{$font-weight}') format('svg');
+    font-style: $font-style;
+    font-weight: $font-weight;
+  }
+}
+
+@include font-specimen(nf2t, normal, 400);
+@include font-specimen(nf2t, italic, 400);
+@include font-specimen(nf2t, normal, 600);
+
+
+/**
+ * Let's set the font
+ */
+h1, h2, h3, h4, p, em, strong, a {
+  font-family: nf2t, sans-serif;
+}
+
+
+/**
+ * Some more detail
+ */
+.item__description .item__title {
+  font-weight: normal;
+}
