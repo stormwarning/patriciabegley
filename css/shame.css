@@ -1,0 +1,7 @@
+.logo--header,
+.nav__site {
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99C1C1C4,endColorstr=#99C1C1C4)"; /* IE8 */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99C1C1C4,endColorstr=#99C1C1C4);   /* IE6 & 7 */
+        zoom: 1;
+}
